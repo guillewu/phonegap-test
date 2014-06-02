@@ -4,7 +4,7 @@ var app = {
         this.store = new MemoryStore(function() {
             $('body').html(new HomeView(self.store).render().el);
         });
-    }
+    },
 
     showAlert: function (message, title) {
         if (navigator.notification) {
